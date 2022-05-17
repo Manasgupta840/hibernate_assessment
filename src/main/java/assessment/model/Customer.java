@@ -1,5 +1,6 @@
 package assessment.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -8,9 +9,13 @@ public class Customer {
 	
 	@Id
 	private Integer customerID;
+	@Column
 	private String customerName;
+	@Column
 	private Long phoneNo;
+	@Column
 	private String city;
+	@Column
 	private String billId;
 	
 	public Customer() {

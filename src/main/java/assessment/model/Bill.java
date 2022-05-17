@@ -1,5 +1,5 @@
 package assessment.model;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -7,7 +7,9 @@ import javax.persistence.Id;
 public class Bill {
 	@Id
 	private String billId;
+	@Column
 	private Double billAmount;
+	@Column
 	private String billCurrency;
 	
 	
